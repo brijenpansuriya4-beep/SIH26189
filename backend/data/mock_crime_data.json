@@ -1,0 +1,146 @@
+{
+  "nodes": [
+    {
+      "id": "node_1",
+      "name": "Al Capone",
+      "type": "Suspect",
+      "role": "Kingpin",
+      "risk": 9.5
+    },
+    {
+      "id": "node_2",
+      "name": "Frank Nitti",
+      "type": "Suspect",
+      "role": "Enforcer",
+      "risk": 8.0
+    },
+    {
+      "id": "node_3",
+      "name": "Jack Guzik",
+      "type": "Suspect",
+      "role": "Accountant",
+      "risk": 7.0
+    },
+    {
+      "id": "node_4",
+      "name": "+1-555-0199",
+      "type": "Phone",
+      "role": "Burner Phone",
+      "risk": 5.0
+    },
+    {
+      "id": "node_5",
+      "name": "+1-555-0122",
+      "type": "Phone",
+      "role": "Personal Phone",
+      "risk": 3.0
+    },
+    {
+      "id": "node_6",
+      "name": "CHASE-992183",
+      "type": "Bank Account",
+      "role": "Shell Company Account",
+      "risk": 8.5
+    },
+    {
+      "id": "node_7",
+      "name": "WELS-441029",
+      "type": "Bank Account",
+      "role": "Personal Account",
+      "risk": 4.0
+    },
+    {
+      "id": "node_8",
+      "name": "Warehouse 12, Chicago Port",
+      "type": "Location",
+      "role": "Meeting Point",
+      "risk": 7.5
+    },
+    {
+      "id": "node_9",
+      "name": "Safehouse, Cicero",
+      "type": "Location",
+      "role": "Hideout",
+      "risk": 6.5
+    },
+    {
+      "id": "node_10",
+      "name": "Tony Accardo",
+      "type": "Suspect",
+      "role": "Underboss",
+      "risk": 8.8
+    }
+  ],
+  "links": [
+    {
+      "source": "node_1",
+      "target": "node_2",
+      "relation": "orders"
+    },
+    {
+      "source": "node_1",
+      "target": "node_3",
+      "relation": "coordinates"
+    },
+    {
+      "source": "node_1",
+      "target": "node_10",
+      "relation": "delegates"
+    },
+    {
+      "source": "node_2",
+      "target": "node_10",
+      "relation": "reports_to"
+    },
+    {
+      "source": "node_1",
+      "target": "node_4",
+      "relation": "uses"
+    },
+    {
+      "source": "node_2",
+      "target": "node_4",
+      "relation": "calls"
+    },
+    {
+      "source": "node_3",
+      "target": "node_6",
+      "relation": "manages"
+    },
+    {
+      "source": "node_6",
+      "target": "node_1",
+      "relation": "funds"
+    },
+    {
+      "source": "node_2",
+      "target": "node_8",
+      "relation": "visits"
+    },
+    {
+      "source": "node_10",
+      "target": "node_8",
+      "relation": "visits"
+    },
+    {
+      "source": "node_10",
+      "target": "node_5",
+      "relation": "uses"
+    },
+    {
+      "source": "node_5",
+      "target": "node_7",
+      "relation": "linked_to"
+    },
+    {
+      "source": "node_9",
+      "target": "node_10",
+      "relation": "shelters"
+    },
+    {
+      "source": "node_9",
+      "target": "node_2",
+      "relation": "shelters"
+    }
+  ]
+}
