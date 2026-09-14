@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import Sidebar from './Sidebar';
 
-const API = 'http://127.0.0.1:8000';
+const API = import.meta.env.VITE_API_URL || 'https://syncore-backend-g63t.onrender.com';
 
 // ── Node Color Palette ────────────────────────────────────────────────────────
 const NODE_COLORS = {
