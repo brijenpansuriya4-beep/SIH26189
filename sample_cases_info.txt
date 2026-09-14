@@ -1,0 +1,38 @@
+======================================================================
+DEMO FIR SAMPLES FOR AI INGESTION & GRAPH VISUALIZATION
+======================================================================
+
+--- CASE 01: SURAT ILLEGAL ARMS & HAWALA SYNDICATE ---
+Case Title: Illegal Arms Supply Network Surat
+
+FIR Text:
+Surat Crime Branch conducted a targeted operation at Varachha, Surat, intercepting a Maruti Swift GJ-05-CD-1122 utilized for illegal weapons transit. 
+
+During questioning, Mohan Rathod admitted to transporting illicit consignments under direct instructions from kingpin Naresh Parmar. Technical surveillance confirmed Naresh Parmar actively uses mobile number +91-9723411223 to issue logistical orders to associates +91-9898011224 and +91-9909055443. 
+
+Financial tracing revealed Naresh Parmar deposited extortion cash into mule account A/C 91901004829188 held at Axis Bank near Ring Road, Surat. Digital audit showed subsequent layering transfers dispatched to accounts A/C 882010994411, A/C 774411002233, and A/C 551020339912.
+
+----------------------------------------------------------------------
+
+--- CASE 02: AHMEDABAD NARCOTICS & CRYPTO LAUNDERING ---
+Case Title: Inter-city Contraband Smuggling Network
+
+FIR Text:
+Police intercepted Deepak Sharma operating a Hyundai Creta GJ-01-BK-4500 near Paldi Cross Roads, Ahmedabad, recovering unauthorized commercial contraband. 
+
+Sharma stated the shipments are sourced directly from an unlicensed warehouse in GIDC Vatva managed by operative Mohan Rathod, who is stationed out of Gandhinagar Sector 21. 
+
+Further forensic investigation linked Mohan Rathod directly to syndicate operator Farhan Memon. Records indicate Farhan Memon controls commercial entity Apex Traders and routed funds through HDFC Bank Account 50100432981120, converting profits into Binance Wallet 0x71C...B29. Cross-network intelligence confirmed financial movements were coordinated by Samir Khan (Phantom) via contact number +91-9723411223.
+
+----------------------------------------------------------------------
+
+--- CASE 03: HIGHWAY EXTORTION & INTERSTATE CONVOY ---
+Case Title: Interstate Extortion & Hawala Ring
+
+FIR Text:
+Surveillance units intercepted Amit Solanki operating near SG Highway, Ahmedabad, while driving a suspicious transport vehicle GJ-01-EF-9988. 
+
+Digital extraction from the seized communication terminal confirmed Amit Solanki works on coordinated field logistics under handler Rajesh Rocky Bhai. 
+
+Call detail logs established that Rajesh Rocky Bhai operates primary mobile number +91-9825012345 to issue extortion demands across transit routes.
+====================================================================

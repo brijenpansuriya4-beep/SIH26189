@@ -1276,10 +1276,10 @@ export default function Dashboard() {
       />
 
       {/* Main Container */}
-      <div className="flex-1 bg-slate-950 relative flex flex-col h-full overflow-hidden">
+      <div className="flex-1 flex flex-col h-screen overflow-hidden relative bg-slate-950">
 
         {/* ── Top Navbar ─────────────────────────────────────────────────── */}
-        <header className="flex items-center justify-between px-6 py-3 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-10 gap-3">
+        <header className="w-full flex flex-wrap items-center justify-between bg-[#081028] border-b border-slate-800/80 px-4 py-2.5 gap-2 shrink-0 z-20" style={{position:'relative'}}>
 
           {/* Left: Case Title & Subtitle */}
           <div className="flex items-center space-x-3 flex-shrink-0">
@@ -1295,13 +1295,13 @@ export default function Dashboard() {
           </div>
 
           {/* Right: Action Pill Group */}
-          <div className="flex items-center gap-2.5 flex-shrink-0">
+          <div className="flex flex-wrap items-center gap-1.5 ml-auto shrink-0">
             {/* Stats badges */}
-            <div className="flex items-center gap-1.5 bg-slate-900/80 px-2.5 py-1.5 rounded-lg border border-slate-700/80 text-xs whitespace-nowrap shadow-sm">
+            <div className="flex items-center gap-1.5 bg-slate-900/80 px-2 py-0.5 rounded-lg border border-slate-700/80 text-xs whitespace-nowrap shadow-sm">
               <span className="w-2 h-2 rounded-full bg-slate-400"></span>
               <span className="text-slate-300">Nodes: <strong className="text-white font-semibold">{graphData.nodes?.length || 0}</strong></span>
             </div>
-            <div className="flex items-center gap-1.5 bg-slate-900/80 px-2.5 py-1.5 rounded-lg border border-slate-700/80 text-xs whitespace-nowrap shadow-sm">
+            <div className="flex items-center gap-1.5 bg-slate-900/80 px-2 py-0.5 rounded-lg border border-slate-700/80 text-xs whitespace-nowrap shadow-sm">
               <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_5px_cyan]"></span>
               <span className="text-slate-300">Links: <strong className="text-white font-semibold">{graphData.links?.length || 0}</strong></span>
             </div>
@@ -1311,7 +1311,7 @@ export default function Dashboard() {
               <button
                 onClick={() => setAuditModalOpen(true)}
                 title="Click to view Cryptographic Audit Ledger & Chain of Custody"
-                className="flex items-center gap-2 bg-emerald-950/70 hover:bg-emerald-900/70 border border-emerald-500/40 hover:border-emerald-400/60 px-2.5 py-1.5 rounded-lg text-xs font-semibold text-emerald-300 transition shadow-[0_0_12px_rgba(16,185,129,0.2)] cursor-pointer whitespace-nowrap group"
+                className="flex items-center gap-2 bg-emerald-950/70 hover:bg-emerald-900/70 border border-emerald-500/40 hover:border-emerald-400/60 px-2 py-0.5 rounded-lg text-xs font-semibold text-emerald-300 transition shadow-[0_0_12px_rgba(16,185,129,0.2)] cursor-pointer whitespace-nowrap shrink-0 group"
               >
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -1334,7 +1334,7 @@ export default function Dashboard() {
               <button
                 onClick={() => setPatternsDrawerOpen(true)}
                 title="Click to inspect automated forensic rule violations"
-                className="flex items-center gap-2 bg-gradient-to-r from-red-950/90 via-amber-950/80 to-red-950/90 hover:from-red-900 hover:to-amber-900 border border-red-500/60 hover:border-red-400 px-3 py-1.5 rounded-lg text-xs font-bold text-red-300 transition shadow-[0_0_15px_rgba(239,68,68,0.35)] cursor-pointer whitespace-nowrap group animate-pulse"
+                className="flex items-center gap-2 bg-gradient-to-r from-red-950/90 via-amber-950/80 to-red-950/90 hover:from-red-900 hover:to-amber-900 border border-red-500/60 hover:border-red-400 px-2.5 py-0.5 rounded-lg text-xs font-bold text-red-300 transition shadow-[0_0_15px_rgba(239,68,68,0.35)] cursor-pointer whitespace-nowrap shrink-0 group animate-pulse"
               >
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-80"></span>
@@ -1381,7 +1381,7 @@ export default function Dashboard() {
               <button
                 onClick={handleFitView}
                 title="Fit all nodes into view"
-                className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 hover:text-cyan-300 transition border-r border-slate-700 cursor-pointer whitespace-nowrap"
+                className="flex items-center gap-1.5 px-2.5 py-0.5 text-xs font-medium text-slate-300 hover:bg-slate-700 hover:text-cyan-300 transition border-r border-slate-700 cursor-pointer whitespace-nowrap shrink-0"
               >
                 <Maximize2 className="w-3.5 h-3.5" />
                 <span>Fit View</span>
@@ -1389,7 +1389,7 @@ export default function Dashboard() {
               <button
                 onClick={handleResetCamera}
                 title="Reset camera to origin"
-                className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:bg-slate-700 hover:text-purple-300 transition cursor-pointer whitespace-nowrap"
+                className="flex items-center gap-1.5 px-2.5 py-0.5 text-xs font-medium text-slate-300 hover:bg-slate-700 hover:text-purple-300 transition cursor-pointer whitespace-nowrap shrink-0"
               >
                 <Focus className="w-3.5 h-3.5" />
                 <span>Reset</span>
@@ -1401,7 +1401,7 @@ export default function Dashboard() {
               onClick={handleExportDossier}
               disabled={exportingDossier || !auditLedger}
               title="Export Official Police Dossier (Court Admissible PDF)"
-              className="flex items-center gap-1.5 bg-emerald-600/20 hover:bg-emerald-600/30 active:bg-emerald-600/40 text-emerald-300 px-3 py-1.5 rounded-lg text-xs font-semibold transition duration-150 border border-emerald-500/40 shadow-[0_0_12px_rgba(16,185,129,0.2)] disabled:opacity-50 cursor-pointer whitespace-nowrap"
+              className="flex items-center gap-1.5 bg-emerald-600/20 hover:bg-emerald-600/30 active:bg-emerald-600/40 text-emerald-300 px-2.5 py-0.5 rounded-lg text-xs font-semibold transition duration-150 border border-emerald-500/40 shadow-[0_0_12px_rgba(16,185,129,0.2)] disabled:opacity-50 cursor-pointer whitespace-nowrap shrink-0"
             >
               {exportingDossier ? (
                 <Loader2 className="w-3.5 h-3.5 animate-spin text-emerald-400" />
@@ -1415,7 +1415,7 @@ export default function Dashboard() {
             <button
               onClick={handleReload}
               disabled={loading || isLoading}
-              className="flex items-center gap-1.5 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition duration-150 border border-cyan-400/40 shadow-[0_0_12px_rgba(34,211,238,0.25)] disabled:opacity-50 cursor-pointer whitespace-nowrap"
+              className="flex items-center gap-1.5 bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-700 text-white px-2.5 py-1 rounded-lg text-xs font-semibold transition duration-150 border border-cyan-400/40 shadow-[0_0_12px_rgba(34,211,238,0.25)] disabled:opacity-50 cursor-pointer whitespace-nowrap shrink-0"
             >
               <RefreshCw className={`w-3.5 h-3.5 ${(loading || isLoading) ? 'animate-spin' : ''}`} />
               <span>{isLoading ? 'Reloading...' : 'Reload'}</span>
@@ -1451,15 +1451,12 @@ export default function Dashboard() {
           )}
 
 
-        {/* ── Cross-Case Syndicate Alert Banner ──────────────────────────── */}
+        {/* ── Cross-Case Syndicate Alert Banner (Row 2 — always below header) ── */}
         {crossCaseData && crossCaseData.total_matches > 0 && (
           <button
             onClick={() => setCrossCaseModalOpen(true)}
-            className="w-full flex items-center justify-between gap-3 px-6 py-2.5
-                       bg-gradient-to-r from-red-950/80 via-amber-950/70 to-red-950/80
-                       border-b border-red-500/40 text-left
-                       hover:from-red-900/80 hover:via-amber-900/70 hover:to-red-900/80
-                       transition-all duration-200 group"
+            className="w-full flex items-center justify-between gap-3 px-4 py-1.5 bg-gradient-to-r from-red-950/80 via-amber-950/70 to-red-950/80 border-b border-red-500/40 text-left hover:from-red-900/80 hover:via-amber-900/70 hover:to-red-900/80 transition-all duration-200 group shrink-0 z-10"
+            style={{position:'relative'}}
           >
             <div className="flex items-center gap-3">
               <span className="relative flex h-3 w-3">
@@ -1470,7 +1467,7 @@ export default function Dashboard() {
               <span className="text-xs font-bold text-amber-300 tracking-wide">
                 ⚠️ {crossCaseData.total_matches} CROSS-CASE SYNDICATE LINK{crossCaseData.total_matches !== 1 ? 'S' : ''} DETECTED
               </span>
-              <span className="text-[10px] text-amber-400/70">
+              <span className="text-[10px] text-amber-400/70 hidden md:inline">
                 — Entities appearing across multiple cases
               </span>
             </div>
@@ -1512,9 +1509,9 @@ export default function Dashboard() {
           </div>
         )}
 
-        {/* ── Graph Area ─────────────────────────────────────────────────── */}
+        {/* ── Graph Area (Row 3 — fills remaining space) ──────────────────── */}
         <div
-          className={`relative flex-1 bg-slate-950 ${pathMode ? 'cursor-crosshair' : ''}`}
+          className={`relative flex-1 w-full overflow-hidden bg-slate-950 ${pathMode ? 'cursor-crosshair' : ''}`}
           ref={graphContainerRef}
         >
 
